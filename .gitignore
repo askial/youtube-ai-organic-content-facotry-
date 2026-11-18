@@ -1,0 +1,7 @@
+# Generated media (large; regenerate or store elsewhere)
+productions/*/clips/
+productions/*/audio/
+productions/*/*.mp4
+productions/*/*.ass
+__pycache__/
+.DS_Store

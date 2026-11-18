@@ -1,0 +1,37 @@
+# Channel profile — every skill reads this first. Edit to taste.
+channel_name: "Your Channel Name"
+platform: youtube_shorts          # youtube_shorts | tiktok | reels (all 9:16)
+niche: "wholesome animated micro-stories with a twist ending"
+audience: "all ages; family-friendly, kid-safe (no violence, no peril beyond mild sadness)"
+
+format:
+  aspect_ratio: "9:16"
+  resolution: [1080, 1920]
+  target_seconds: 45              # story length; Shorts must be <= 60 total
+  max_seconds: 59
+  shots_per_story: [8, 12]        # min, max
+  dialogue: minimal               # none | minimal | narrated
+  captions: sparse                # none | sparse (key lines only) | full
+
+visual_style: >
+  Stylized 3D animated feature-film look: soft subsurface skin, big expressive eyes,
+  slightly exaggerated proportions, rich cinematic lighting (warm practicals vs cool
+  rain-blue ambience), shallow depth of field, wet reflective streets, cozy textures.
+  Original characters only — never imitate a specific studio's existing characters.
+
+recurring_themes:
+  - kindness repaid years later
+  - small act, big ripple
+  - underdog gets a second chance
+  - lost-and-found / reunion
+  - pet loyalty
+
+higgsfield:
+  image_model: gpt_image_2_6      # character refs + keyframes
+  video_model: seedance_2_5       # image-to-video per shot (kling3_0 for multi-shot/audio)
+  music_model: suno_music
+  max_credits_per_short: 0        # 0 = always ask before spending; set a number to auto-approve under it
+
+posting:
+  shorts_per_batch: 3
+  hashtags_base: ["#shorts", "#animation", "#story", "#wholesome"]
